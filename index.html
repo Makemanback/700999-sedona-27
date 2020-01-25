@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<body>
+    <header>
+        <nav>
+            <img src="#" alt="logotype">
+            <ul>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="#">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="visually-hidden">Sedona</h1>
+        <img src="#" alt="logotype big">
+        <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
-  </body>
+        <section>
+            <h2>Заинтересовались?</h2>
+            <p>
+                Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
+            </p>
+        </section>
+
+        <section>
+            <h2>ПОИСК ГОСТИНИЦЫ В седоне</h2>
+            <form>
+                <label for="date-in">Дата заезда:</label>
+                <input type="date" id="date-in"><br>
+                <label for="date-out">Дата выезда:</label>
+                <input type="date" id="date-out"><br>
+
+                <div class="paginator">
+                    <span>Взрослые:</span>
+                    <a href="#">-</a>
+                    <output>2</output>
+                    <a href="#">+</a>
+                    <span>Дети:</span>
+                    <a href="#">-</a>
+                    <output>0</output>
+                    <a href="#">+</a>
+                </div>
+                <button type="submit">Найти</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>#visitSEDONA</p>
+        <p>Тел: +7(495) 666-02-66</p>
+
+        <section>
+            <ul>
+                <li><a href="#">tw</a></li>
+                <li><a href="#">fb</a></li>
+                <li><a href="#">yt</a></li>
+            </ul>
+        </section>
+
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="htmla-logo"></a>
+    </footer>
+
+</body>
+
 </html>
