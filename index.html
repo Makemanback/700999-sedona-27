@@ -8,21 +8,37 @@
 
 <body>
     <header>
-        <nav>
-            <img src="#" alt="logotype">
-            <ul>
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="#">Гостиницы</a></li>
-            </ul>
-        </nav>
+        <div>
+            <img src="#" alt="logotype" width="140" height="71">
+            <nav>
+                <ul>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Фото и видео</a></li>
+                    <li><a href="#">Карта штата</a></li>
+                    <li><a href="#">Гостиницы</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <h1 class="visually-hidden">Sedona</h1>
-        <img src="#" alt="logotype big">
-        <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
+        <div>
+            <img src="#" alt="logotype big" width="459" height="353">
+            <span>Welcome</span>
+            <span>—to the gorgeous—</span>
+            <span>SEDONA</span>
+            <span>
+            "Because the Grand<br>
+            Canyon sucks!"
+          </span>
+            <!-- Оставил и изображение и текст -->
+        </div>
+
+        <div>
+            <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
 
         <section>
             <h2>Заинтересовались?</h2>
@@ -33,7 +49,7 @@
 
         <section>
             <h2>ПОИСК ГОСТИНИЦЫ В седоне</h2>
-            <form>
+            <!-- <form>
                 <label for="date-in">Дата заезда:</label>
                 <input type="date" id="date-in"><br>
                 <label for="date-out">Дата выезда:</label>
@@ -50,13 +66,14 @@
                     <a href="#">+</a>
                 </div>
                 <button type="submit">Найти</button>
-            </form>
+            </form> -->
         </section>
 
     </main>
     <footer>
-        <p>#visitSEDONA</p>
-        <p>Тел: +7(495) 666-02-66</p>
+        <section>
+            <a href="#">#visitSEDONA</a>
+        </section>
 
         <section>
             <ul>
@@ -66,8 +83,9 @@
             </ul>
         </section>
 
-        <p>Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="htmla-logo"></a>
+        <section>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">Website by<img width="115" height="41" src="#" alt="htmla-logo"></a>
+        </section>
     </footer>
 
 </body>
