@@ -8,7 +8,7 @@
 
 <body>
     <header>
-        <a><img src="img/logo-small.png" alt="logotype" width="140" height="71"></a>
+        <a href=""><img src="img/logo-small.png" alt="logotype" width="140" height="71"></a>
         <nav>
             <ul>
                 <li><a href="">Информация</a></li>
@@ -20,40 +20,43 @@
     </header>
 
     <main>
-
-        <div class="container">
-            <div>
-                <span>Инфраструктура:</span>
-                <input type="checkbox" name="pool" id="pool" checked>
-                <label for="pool">Бассейн</label>
-                <input type="checkbox" name="parking" id="parking">
-                <label for="parking">Парковка</label>
-                <input type="checkbox" name="wifi" id="wifi">
-                <label for="wifi">Wi-Fi</label>
+        <section>
+            <div class="container">
+                <form class="hotel-filter">
+                    <div class="container-checkbox">
+                        <span>Инфраструктура:</span>
+                        <input type="checkbox" name="pool" id="pool" checked>
+                        <label for="pool">Бассейн</label>
+                        <input type="checkbox" name="parking" id="parking">
+                        <label for="parking">Парковка</label>
+                        <input type="checkbox" name="wifi" id="wifi">
+                        <label for="wifi">Wi-Fi</label>
+                    </div>
+                    <div class="container-checkbox">
+                        <span>Тип жилья:</span>
+                        <input type="checkbox" name="hotel" id="hotel" checked>
+                        <label for="">Гостиница</label>
+                        <input type="checkbox" name="motel" id="motel" checked>
+                        <label for="">Мотель</label>
+                        <input type="checkbox" name="apartments" id="apartments" checked>
+                        <label for="">Апартаменты</label>
+                    </div>
+                    <div class="container-price">
+                        <span>Стоимость в сутки (Р):</span>
+                        <span>от 0</span>
+                        <span>До 3000</span>
+                        <button type="button">Показать</button>
+                    </div>
+                </form>
+                <div class="sorting">
+                    <h3>Найдено: 3</h3>
+                    <span>Сортировка:</span>
+                    <span>По цене</span>
+                    <span>По типу</span>
+                    <span>По рейтингу</span>
+                </div>
             </div>
-            <div>
-                <span>Тип жилья:</span>
-                <input type="checkbox" name="hotel" id="hotel" checked>
-                <label for="">Гостиница</label>
-                <input type="checkbox" name="motel" id="motel" checked>
-                <label for="">Мотель</label>
-                <input type="checkbox" name="apartments" id="apartments" checked>
-                <label for="">Апартаменты</label>
-            </div>
-            <div>
-                <span>Стоимость в сутки (Р):</span>
-                <span>от 0</span>
-                <span>До 3000</span>
-                <button type="button">Показать</button>
-            </div>
-            <div>
-                <h3>Найдено: 3</h3>
-                <span>Сортировка:</span>
-                <span>По цене</span>
-                <span>По типу</span>
-                <span>По рейтингу</span>
-            </div>
-        </div>
+        </section>
 
         <div class="container">
             <section class="hotels">
@@ -92,11 +95,9 @@
         <a href="">#visitSEDONA</a>
 
         <div class="socials">
-            <ul>
-                <li><a href="">tw</a></li>
-                <li><a href="">fb</a></li>
-                <li><a href="">yt</a></li>
-            </ul>
+            <a href="">tw</a>
+            <a href="">fb</a>
+            <a href="">yt</a>
         </div>
 
         <a href="https://htmlacademy.ru/intensive/htmlcss">Website by<img width="115" height="41" src="img/logo-htmla.svg" alt="htmla-logo"></a>
