@@ -91,26 +91,24 @@
                 <p>
                     Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
                 </p>
-
-                <h2>Поиск гостиницы в седоне</h2>
-                <!-- <form>
-                <label for="date-in">Дата заезда:</label>
-                <input type="date" id="date-in"><br>
-                <label for="date-out">Дата выезда:</label>
-                <input type="date" id="date-out"><br>
-
-                <div class="paginator">
-                    <span>Взрослые:</span>
-                    <a href="#">-</a>
-                    <output>2</output>
-                    <a href="#">+</a>
-                    <span>Дети:</span>
-                    <a href="#">-</a>
-                    <output>0</output>
-                    <a href="#">+</a>
+                <div class="form-group">
+                    <h2>Поиск гостиницы в седоне</h2>
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <label for="date-in">Дата заезда:</label>
+                        <input type="text" id="date-in" name="date" value="24 апреля 2017">
+                        <label for="date-out">Дата выезда:</label>
+                        <input type="text" id="date-out" name="date" value="4 июля 2017">
+                        <span>Взрослые:</span>
+                        <button type="button">-</button>
+                        <input type="number" value="2" name="number-adults">
+                        <button type="button">+</button>
+                        <span>Дети:</span>
+                        <button type="button">-</button>
+                        <input type="number" value="0" name="number-children">
+                        <button type="button">+</button>
+                        <button type="submit">Найти</button>
+                    </form>
                 </div>
-                <button type="submit">Найти</button>
-            </form> -->
             </div>
         </section>
         <img src="img/map.jpg" alt="" width="1200" height="593">
