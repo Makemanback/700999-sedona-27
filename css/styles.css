@@ -1,7 +1,28 @@
 body {
     background-color: #f2f2f2;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 nav a {
@@ -18,6 +39,18 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
 }
 
 .main-logo {
@@ -42,19 +75,6 @@ a {
     padding-top: 79px;
 }
 
-.visually-hidden:not(:focus):not(:active) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .main-logo h2 {
     font-size: 21px;
     font-weight: bold;
@@ -69,17 +89,13 @@ a {
     text-align: center;
 }
 
-
-/*
 .grid-row:first-child,
-.grid-row:nth-child(5) {
+.grid-row:nth-child(7) {
     background-color: #81b3d2;
-    width: 400px;
-    height: 256px;
 }
 
 .grid-row:first-child h3,
-.grid-row:nth-child(5) h3 {
+.grid-row:nth-child(7) h3 {
     font-size: 21px;
     color: #ffffff;
     text-align: center;
@@ -87,12 +103,17 @@ a {
 }
 
 .grid-row:first-child span,
-.grid-row:nth-child(5) span {
+.grid-row:nth-child(7) span {
     font-size: 14px;
     text-align: center;
     color: #ffffff;
     font-weight: normal;
-} */
+}
+
+.grid-row:nth-child(n+8) {
+    background-color: #eeeeee;
+    text-align: center;
+}
 
 .booking h2 {
     font-size: 30px;
@@ -196,20 +217,46 @@ footer>a:last-child {
     line-height: 1.86;
 }
 
-.sorting span {
+.sorting {
+    background-color: #ffffff;
+}
+
+.sorting button {
     font-size: 12px;
     line-height: 1.5;
     text-align: left;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
 }
 
-.sorting span:nth-child(3) {
+.sorting button:nth-child(n+1):hover {
     color: #81b3d2;
 }
 
-.sorting span:nth-child(4),
-.sorting span:nth-child(5) {
+.sorting button:nth-of-type(n):active {
+    color: #000000;
+}
+
+.sorting button:first-of-type {
+    color: #81b3d2;
+}
+
+.sorting button:nth-of-type(n+2) {
     color: rgba(0, 0, 0, 0.3);
     border-bottom: dotted 1px #81b3d2;
+}
+
+.container .hotels {
+    background-color: #ffffff;
+}
+
+.hotels-item h3:hover {
+    color: #81b3d2;
+}
+
+.hotels-item h3:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .hotels-item span {
@@ -226,10 +273,29 @@ footer>a:last-child {
     line-height: 1.5;
     font-weight: bold;
     text-align: left;
+    padding: 8px 16px;
+}
+
+.hotels-item a:hover {
+    background-color: #669ec0;
+}
+
+.hotels-item a:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
 }
 
 .hotels-item a+a {
     background-color: #766357;
+}
+
+.hotels-item a+a:hover {
+    background-color: #604e43;
+}
+
+.hotels-item a+a:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;
 }
 
 .hotels-item .rating {
@@ -238,8 +304,50 @@ footer>a:last-child {
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
+    padding-top: 5px;
+    padding-right: 16px;
+    padding-bottom: 6px;
+    padding-left: 16px;
 }
 
 nav .active {
     color: #766357;
+}
+
+.hotel-filter {
+    background-image: url(../img/filter-background.jpg);
+    background-size: cover;
+}
+
+.container-checkbox,
+.container-price,
+.container-price button {
+    color: #ffffff;
+}
+
+.container-checkbox span,
+.container-price label {
+    font-size: 16px;
+    line-height: 1.31;
+    font-weight: bold;
+    text-align: left;
+}
+
+.container-checkbox label,
+.container-price span,
+.container-price button {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: normal;
+    text-align: left;
+}
+
+.container-price span {
+    text-align: center;
+}
+
+.container-price button {
+    text-transform: uppercase;
+    background-color: transparent;
+    border: solid 2px #ffffff;
 }
