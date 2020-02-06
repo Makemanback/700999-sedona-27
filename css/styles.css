@@ -1,0 +1,245 @@
+body {
+    background-color: #f2f2f2;
+    font-family: "PT Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.86;
+    text-align: center;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-logo {
+    background-color: #ffffff;
+    background-image: url(../img/polygon.png), url(../img/background-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: 1203px 59px, 1200px 508px;
+    background-position: center 451px, center top;
+    text-align: center;
+    width: 1200px;
+    height: 648px;
+}
+
+.main-logo img {
+    text-align: center;
+    padding-top: 76px;
+    padding-right: 371px;
+    padding-left: 370px;
+}
+
+.main-logo .container:last-child {
+    padding-top: 79px;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-logo h2 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    text-align: center;
+}
+
+.main-logo p {
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.86;
+    text-align: center;
+}
+
+
+/*
+.grid-row:first-child,
+.grid-row:nth-child(5) {
+    background-color: #81b3d2;
+    width: 400px;
+    height: 256px;
+}
+
+.grid-row:first-child h3,
+.grid-row:nth-child(5) h3 {
+    font-size: 21px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.grid-row:first-child span,
+.grid-row:nth-child(5) span {
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: normal;
+} */
+
+.booking h2 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+}
+
+.booking p {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #333333;
+    text-align: center;
+}
+
+.booking>.container>button {
+    background-color: #766357;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    text-transform: uppercase;
+    font-style: "PT Sans";
+}
+
+.booking>.container>button:hover {
+    background-color: #604e43;
+}
+
+.booking>.container>button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.form-group,
+input {
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.86;
+    font-weight: bold;
+    text-align: left;
+}
+
+form input {
+    background-color: #f2f2f2;
+}
+
+input:hover {
+    background-color: #ebebeb;
+}
+
+input:focus {
+    background-color: #ffffff;
+}
+
+form>button:last-child {
+    background-color: #81b3d2;
+    color: #fff;
+    text-transform: uppercase;
+    font-style: "PT Sans";
+    font-size: 21px;
+    line-height: 1.24;
+    text-align: center;
+}
+
+form>button:last-child:hover {
+    background-color: #669ec0;
+}
+
+form>button:last-child:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.form-group button {
+    background-color: #f2f2f2;
+    color: #979797;
+}
+
+.form-group button:hover {
+    color: #000000;
+}
+
+.form-group button:active {
+    color: #81b3d2;
+}
+
+footer>a:first-child {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.24;
+}
+
+footer>a:last-child {
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.86;
+}
+
+.sorting span {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.sorting span:nth-child(3) {
+    color: #81b3d2;
+}
+
+.sorting span:nth-child(4),
+.sorting span:nth-child(5) {
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: dotted 1px #81b3d2;
+}
+
+.hotels-item span {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.hotels-item a {
+    background-color: #81b3d2;
+    color: #ffffff;
+    size: 14px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: left;
+}
+
+.hotels-item a+a {
+    background-color: #766357;
+}
+
+.hotels-item .rating {
+    background-color: #f2f2f2;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+nav .active {
+    color: #766357;
+}
