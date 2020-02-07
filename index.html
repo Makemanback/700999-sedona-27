@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>HTML Academy: Седона</title>
 </head>
@@ -95,6 +95,33 @@
                 </p>
                 <button class="button">Поиск гостиницы в седоне</button>
             </div>
+            <div class="container visually-hidden">
+                <form action="https://echo.htmlacademy.ru" method="post" class="popup">
+                    <div class="form-group">
+                        <label for="date-in">Дата заезда:</label>
+                        <input type="text" id="date-in" name="date" value="24 апреля 2017">
+                    </div>
+                    <div class="form-group">
+                        <label for="date-out">Дата выезда:</label>
+                        <input type="text" id="date-out" name="date" value="4 июля 2017">
+                    </div>
+                    <div class="form-group">
+                        <label>Взрослые:
+                      <button type="button">-</button>
+                      <input type="number" value="2" name="number-adults">
+                      <button type="button">+</button>
+                  </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Дети:
+                      <button type="button">-</button>
+                      <input type="number" value="0" name="number-children">
+                      <button type="button">+</button>
+                  </label>
+                    </div>
+                    <button type="submit">Найти</button>
+                </form>
+            </div>
         </section>
         <img src="img/map.jpg" alt="" width="1200" height="593">
 
@@ -111,33 +138,6 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">Website by<img width="115" height="41" src="img/logo-htmla.svg" alt="htmla-logo"></a>
     </footer>
 
-    <div class="container visually-hidden">
-        <form action="https://echo.htmlacademy.ru" method="post" class="popup">
-            <div class="form-group">
-                <label for="date-in">Дата заезда:</label>
-                <input type="text" id="date-in" name="date" value="24 апреля 2017">
-            </div>
-            <div class="form-group">
-                <label for="date-out">Дата выезда:</label>
-                <input type="text" id="date-out" name="date" value="4 июля 2017">
-            </div>
-            <div class="form-group">
-                <label>Взрослые:
-                <button type="button">-</button>
-                <input type="number" value="2" name="number-adults">
-                <button type="button">+</button>
-            </label>
-            </div>
-            <div class="form-group">
-                <label>Дети:
-                <button type="button">-</button>
-                <input type="number" value="0" name="number-children">
-                <button type="button">+</button>
-            </label>
-            </div>
-            <button type="submit">Найти</button>
-        </form>
-    </div>
 </body>
 
 </html>

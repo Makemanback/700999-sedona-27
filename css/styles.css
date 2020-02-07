@@ -25,35 +25,11 @@ a {
     overflow: hidden;
 }
 
-nav a {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.86;
-    text-align: center;
-    color: #000000;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 .container {
     background-color: #ffffff;
 }
 
-footer {
-    background-color: #ffffff;
-}
-
-header {
-    background-color: #ffffff;
-}
-
-.main-logo {
+.main-logo .container:first-child {
     background-color: #ffffff;
     background-image: url(../img/polygon.png), url(../img/background-photo.jpg);
     background-repeat: no-repeat;
@@ -308,10 +284,6 @@ footer>a:last-child {
     padding-right: 16px;
     padding-bottom: 6px;
     padding-left: 16px;
-}
-
-nav .active {
-    color: #766357;
 }
 
 .hotel-filter {
