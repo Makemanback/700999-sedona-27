@@ -95,7 +95,8 @@
                 </p>
                 <button class="button">Поиск гостиницы в седоне</button>
             </div>
-            <div class="container visually-hidden">
+            <div class="container ">
+                <!-- visually-hidden -->
                 <form action="https://echo.htmlacademy.ru" method="post" class="popup">
                     <div class="form-group">
                         <label for="date-in">Дата заезда:</label>
@@ -106,18 +107,16 @@
                         <input type="text" id="date-out" name="date" value="4 июля 2017">
                     </div>
                     <div class="form-group">
-                        <label>Взрослые:
-                      <button type="button">-</button>
-                      <input type="number" value="2" name="number-adults">
-                      <button type="button">+</button>
-                  </label>
+                        <label for="adults-value">Взрослые:</label>
+                        <button type="button">-</button>
+                        <input type="number" value="2" name="number-adults" id="adults-value">
+                        <button type="button">+</button>
                     </div>
                     <div class="form-group">
-                        <label>Дети:
-                      <button type="button">-</button>
-                      <input type="number" value="0" name="number-children">
-                      <button type="button">+</button>
-                  </label>
+                        <label for="children-value">Дети:</label>
+                        <button type="button">-</button>
+                        <input type="number" value="0" name="number-children" id="children-value">
+                        <button type="button">+</button>
                     </div>
                     <button type="submit">Найти</button>
                 </form>

@@ -1,3 +1,9 @@
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+} */
+
 body {
     background-color: #f2f2f2;
     font-family: "PT Sans", Arial, sans-serif;
@@ -125,28 +131,24 @@ a {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.form-group,
-input {
+.form-group input {
     color: #000000;
     font-size: 14px;
     line-height: 1.86;
     font-weight: bold;
     text-align: left;
-}
-
-form input {
     background-color: #f2f2f2;
 }
 
-input:hover {
+.form-group input:hover {
     background-color: #ebebeb;
 }
 
-input:focus {
+.form-group input:focus {
     background-color: #ffffff;
 }
 
-form>button:last-child {
+.popup>button {
     background-color: #81b3d2;
     color: #fff;
     text-transform: uppercase;
@@ -156,11 +158,11 @@ form>button:last-child {
     text-align: center;
 }
 
-form>button:last-child:hover {
+.popup>button:hover {
     background-color: #669ec0;
 }
 
-form>button:last-child:active {
+.popup>button:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
 }
@@ -227,11 +229,21 @@ footer>a:last-child {
     background-color: #ffffff;
 }
 
-.hotels-item h3:hover {
+.hotels-item button {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+}
+
+.hotels-item button:hover {
     color: #81b3d2;
 }
 
-.hotels-item h3:active {
+.hotels-item button:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
