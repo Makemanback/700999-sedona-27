@@ -1,8 +1,8 @@
-/* *,
+*,
 *::before,
 *::after {
     box-sizing: border-box;
-} */
+}
 
 body {
     background-color: #f2f2f2;
@@ -35,22 +35,37 @@ a {
     background-color: #ffffff;
 }
 
+
+/* Стили хедера */
+
+.navigation a {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.86;
+    text-align: center;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+
+/* стили главного логотипа */
+
 .main-logo .container:first-child {
     background-color: #ffffff;
     background-image: url(../img/polygon.png), url(../img/background-photo.jpg);
     background-repeat: no-repeat;
-    background-size: 1203px 59px, 1200px 508px;
-    background-position: center 451px, center top;
+    background-size: 1203px 59px, 1200px 510px;
+    background-position: center 452px, center top;
     text-align: center;
     width: 1200px;
-    height: 648px;
+    height: 510px;
 }
 
 .main-logo img {
     text-align: center;
-    padding-top: 76px;
-    padding-right: 371px;
-    padding-left: 370px;
 }
 
 .main-logo .container:last-child {
@@ -70,6 +85,9 @@ a {
     line-height: 1.86;
     text-align: center;
 }
+
+
+/* стили причин для посещения Седоны */
 
 .grid-row:first-child,
 .grid-row:nth-child(7) {
@@ -97,6 +115,9 @@ a {
     text-align: center;
 }
 
+
+/* стили заголовка и параграфа формы */
+
 .booking h2 {
     font-size: 30px;
     font-weight: bold;
@@ -112,7 +133,10 @@ a {
     text-align: center;
 }
 
-.booking>.container>button {
+
+/* кнопка для открытия попапа */
+
+.booking .popup-open {
     background-color: #766357;
     color: #ffffff;
     font-size: 21px;
@@ -122,14 +146,17 @@ a {
     font-style: "PT Sans";
 }
 
-.booking>.container>button:hover {
+.booking .popup-open:hover {
     background-color: #604e43;
 }
 
-.booking>.container>button:active {
+.booking .popup-open:active {
     background-color: #503e33;
     color: rgba(255, 255, 255, 0.3);
 }
+
+
+/* стили формы на главной */
 
 .form-group input {
     color: #000000;
@@ -180,6 +207,9 @@ a {
     color: #81b3d2;
 }
 
+
+/* стили футера */
+
 footer>a:first-child {
     color: #000000;
     font-size: 21px;
@@ -194,6 +224,9 @@ footer>a:last-child {
     text-align: center;
     line-height: 1.86;
 }
+
+
+/* стили сортировки в каталоге */
 
 .sorting {
     background-color: #ffffff;
@@ -225,9 +258,8 @@ footer>a:last-child {
     border-bottom: dotted 1px #81b3d2;
 }
 
-.container .hotels {
-    background-color: #ffffff;
-}
+
+/* стили названий отелей в каталоге */
 
 .hotels-item button {
     color: #000000;
@@ -247,12 +279,18 @@ footer>a:last-child {
     color: rgba(0, 0, 0, 0.3);
 }
 
+
+/* стили типа размещения, цены и рейтинга */
+
 .hotels-item span {
     color: #333333;
     font-size: 14px;
     line-height: 1.5;
     text-align: left;
 }
+
+
+/* стили ссылок "подробнее", "забронировать" в каталоге */
 
 .hotels-item a {
     background-color: #81b3d2;
@@ -286,6 +324,9 @@ footer>a:last-child {
     background-color: #503e33;
 }
 
+
+/* стили рейтинга */
+
 .hotels-item .rating {
     background-color: #f2f2f2;
     color: #666666;
@@ -298,10 +339,16 @@ footer>a:last-child {
     padding-left: 16px;
 }
 
+
+/* стили фонового изображения формы в каталоге */
+
 .hotel-filter {
     background-image: url(../img/filter-background.jpg);
     background-size: cover;
 }
+
+
+/* стили формы в каталоге */
 
 .container-checkbox,
 .container-price,
