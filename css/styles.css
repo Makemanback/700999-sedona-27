@@ -1048,3 +1048,14 @@
         background-image: url(../img/checkbox-on.svg);
         width: 27px;
     }
+    /* прописать состояние disabled для кнопок */
+    
+    .check-input:disabled+.check-box {
+        background-image: url(../img/checkbox-off-3.svg);
+        width: 23px;
+    }
+    
+    .check-input:checked:disabled+.check-box {
+        background-image: url(../img/checkbox-on-2.svg);
+        width: 27px;
+    }
