@@ -498,8 +498,10 @@ form.popup {
 
 .map {
     display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -120px;
     box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
@@ -508,16 +510,44 @@ form.popup {
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 1200px;
     min-height: 120px;
     margin-right: auto;
     margin-left: auto;
     box-shadow: 0px 20px 15px 0 rgba(0, 1, 1, 0.2);
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: #ffffff;
+    padding-left: 132px;
+    padding-right: 101px;
 }
+
+
+/* контакты */
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 169px;
+}
+
+.contacts a,
+.contacts span {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.24;
+}
+
+.contacts a {
+    padding-bottom: 16px;
+}
+
+
+/* социальные сети */
 
 .footer .socials {
     display: flex;
@@ -527,7 +557,6 @@ form.popup {
     padding: 0;
     width: 144px;
     list-style: none;
-    margin-right: 31px;
 }
 
 .socials .social-button {
@@ -552,25 +581,8 @@ form.popup {
     opacity: 0.3;
 }
 
-.contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 132px;
-}
 
-.contacts a,
-.contacts span {
-    color: #000000;
-    font-size: 21px;
-    font-weight: bold;
-    text-align: left;
-    line-height: 1.24;
-}
-
-.contacts a {
-    padding-bottom: 16px;
-}
+/* ссылка на академию */
 
 .academy-button {
     display: flex;
@@ -579,7 +591,7 @@ form.popup {
     font-size: 14px;
     text-align: center;
     line-height: 1.86;
-    margin-right: 101px;
+    margin-left: auto;
 }
 
 .academy-button span {
