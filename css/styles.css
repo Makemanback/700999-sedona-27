@@ -32,12 +32,15 @@ a {
     overflow: hidden;
 }
 
-.container {
-    background-color: #ffffff;
-    width: 1200px;
+.main-wrapper {
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 20px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.container {
+    background-color: #ffffff;
 }
 
 
@@ -56,6 +59,7 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     min-height: 56px;
@@ -98,13 +102,10 @@ a {
 .main-logo .container:last-child {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     min-width: 489px;
     min-height: 217px;
-    padding-top: 61px;
-    padding-bottom: 56px;
-    padding-left: 355px;
-    padding-right: 356px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -119,6 +120,8 @@ a {
     line-height: 1.24;
     text-align: center;
     margin: 0;
+    margin-bottom: 38px;
+    width: 440px;
 }
 
 .main-logo p {
@@ -139,77 +142,121 @@ a {
 
 .grid-row {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.grid-wrapper-top .feature-picture {
+    width: 800px;
+    min-height: 256px;
+    background-image: url(../img/feature-picture.jpg);
+    background-size: cover;
+}
+
+.grid-wrapper-bottom .feature-picture {
+    width: 800px;
+    min-height: 256px;
+    background-image: url(../img/canyon.jpg);
+    background-size: cover;
+}
+
+.grid-wrapper-top,
+.grid-wrapper-bottom {
+    display: flex;
+}
+
+.grid-wrapper-top .grid-row,
+.grid-wrapper-bottom .grid-row {
+    width: 400px;
+    padding: 15px;
 }
 
 
 /* стили для настоящего городка и моста дъявола */
 
-.grid-row:first-child,
-.grid-row:nth-child(7) {
+.grid-wrapper-top,
+.grid-wrapper-bottom {
     background-color: #81b3d2;
-    width: 400px;
+    max-width: 1200px;
     min-height: 256px;
+    color: #ffffff;
 }
 
-.grid-row:first-child h3,
-.grid-row:nth-child(7) h3 {
+.grid-wrapper-bottom {
+    flex-direction: row-reverse;
+}
+
+.grid-wrapper-top h3,
+.grid-wrapper-bottom h3 {
     font-size: 21px;
     line-height: 1.5;
-    color: #ffffff;
     text-align: center;
     font-weight: bold;
     margin: 0;
 }
 
-.grid-row:first-child span,
-.grid-row:nth-child(7) span {
+.grid-wrapper-top span,
+.grid-wrapper-bottom span {
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
-    color: #ffffff;
     font-weight: normal;
 }
 
-.grid-row:first-child {
-    justify-content: space-between;
-    padding-top: 46px;
-    padding-bottom: 64px;
-    padding-right: 60px;
-    padding-left: 60px;
+.grid-wrapper-top span:first-of-type {
+    margin-bottom: 32px;
 }
 
-.grid-row:nth-child(7) {
-    justify-content: space-between;
-    padding-top: 49px;
-    padding-bottom: 65px;
-    padding-right: 49px;
-    padding-left: 48px;
+.grid-wrapper-top span:last-of-type {
+    width: 282px;
+}
+
+.grid-wrapper-top h3 {
+    width: 122px;
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 27px;
+}
+
+.grid-wrapper-bottom h3 {
+    width: 150px;
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 29px;
+}
+
+.grid-wrapper-bottom span:first-of-type {
+    margin-bottom: 30px;
+}
+
+.grid-wrapper-bottom span:last-of-type {
+    width: 303px;
 }
 
 
 /* стили для жилья, еды и сувениров */
 
+.grid-row:nth-child(2),
 .grid-row:nth-child(3),
-.grid-row:nth-child(4),
-.grid-row:nth-child(5) {
+.grid-row:nth-child(4) {
     min-height: 330px;
-    justify-content: space-between;
+    width: 400px;
+    padding: 15px
 }
 
-.grid-row:nth-child(3) span,
+.grid-row:nth-child(2) span,
 .grid-row:nth-child(4) span,
-.grid-row:nth-child(5) span {
+.grid-row:nth-child(3) span {
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
     color: #333333;
 }
 
-.grid-row:nth-child(3) h3,
 .grid-row:nth-child(4) h3,
-.grid-row:nth-child(5) h3 {
+.grid-row:nth-child(2) h3,
+.grid-row:nth-child(3) h3 {
     font-size: 21px;
     line-height: 1;
     text-align: center;
@@ -217,44 +264,75 @@ a {
     margin: 0;
 }
 
-.grid-row:nth-child(3),
-.grid-row:nth-child(4),
-.grid-row:nth-child(5) {
-    width: 400px;
-    padding-top: 60px;
-    padding-bottom: 85px;
+.grid-row:nth-child(2) span {
+    width: 255px;
 }
 
 .grid-row:nth-child(3) span {
-    width: 252px;
-}
-
-.grid-row:nth-child(4) span {
     width: 284px;
 }
 
-.grid-row:nth-child(5) span {
+.grid-row:nth-child(4) span {
     width: 273px;
+}
+
+.grid-row:nth-child(2) h3 {
+    margin-bottom: 25px;
+}
+
+.grid-row:nth-child(3) h3 {
+    margin-bottom: 26px;
+}
+
+.grid-row:nth-child(4) h3 {
+    margin-bottom: 28px;
+}
+
+.grid-row:nth-of-type(2) .icon-decorative {
+    margin-bottom: 28px;
+}
+
+.grid-row:nth-of-type(3) .icon-decorative,
+.grid-row:nth-of-type(4) .icon-decorative {
+    margin-bottom: 32px;
+}
+
+.grid-row:nth-of-type(2) .icon-decorative::before {
+    content: url(../img/icon-1.svg);
+    width: 75px;
+    height: 72px;
+}
+
+.grid-row:nth-of-type(3) .icon-decorative::before {
+    content: url(../img/icon-3.svg);
+    width: 74px;
+    height: 70px;
+}
+
+.grid-row:nth-of-type(4) .icon-decorative::before {
+    content: url(../img/icon-2.svg);
+    width: 64px;
+    height: 76px;
 }
 
 
 /* стили для преимуществ 3-5 */
 
-.grid-row:nth-child(n+8) {
+.grid-row:nth-child(n+6) {
     background-color: #eeeeee;
-    justify-content: space-between;
     min-height: 256px;
     width: 400px;
+    padding: 15px;
 }
 
-.grid-row:nth-child(n+8) span {
+.grid-row:nth-child(n+6) span {
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
     color: #333333;
 }
 
-.grid-row:nth-child(n+8) h3 {
+.grid-row:nth-child(n+6) h3 {
     font-size: 21px;
     line-height: 1;
     text-align: center;
@@ -263,30 +341,36 @@ a {
     width: 100px;
 }
 
-.grid-row:nth-child(8) {
-    padding-top: 50px;
-    padding-right: 97px;
-    padding-bottom: 63px;
-    padding-left: 95px;
+.grid-row:nth-child(6) h3 {
+    margin-bottom: 26px;
+    width: 117px;
+    text-align: center;
 }
 
-.grid-row:nth-child(9) {
-    padding-top: 50px;
-    padding-right: 69px;
-    padding-bottom: 64px;
-    padding-left: 69px;
-}
-
-.grid-row:nth-child(10) {
-    padding-top: 50px;
-    padding-right: 77px;
-    padding-bottom: 64px;
-    padding-left: 77px;
+.grid-row:nth-child(7) h3 {
+    margin-bottom: 26px;
 }
 
 .grid-row:nth-child(8) h3 {
-    width: 117px;
-    text-align: center;
+    margin-bottom: 28px;
+}
+
+.grid-row:nth-child(6) span:first-of-type,
+.grid-row:nth-child(7) span:first-of-type,
+.grid-row:nth-child(8) span:first-of-type {
+    margin-bottom: 27px;
+}
+
+.grid-row:nth-child(6) span:last-of-type {
+    width: 208px;
+}
+
+.grid-row:nth-child(7) span:last-of-type {
+    width: 262px;
+}
+
+.grid-row:nth-child(8) span:last-of-type {
+    width: 255px;
 }
 
 
@@ -296,12 +380,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
     min-height: 291px;
     min-width: 1200px;
-    padding-top: 57px;
-    padding-right: 383px;
-    padding-left: 383px;
 }
 
 .booking h2 {
@@ -311,6 +393,7 @@ a {
     text-align: center;
     color: #000000;
     margin: 0;
+    margin-bottom: 23px;
 }
 
 .booking p {
@@ -319,6 +402,7 @@ a {
     color: #333333;
     text-align: center;
     margin: 0;
+    margin-bottom: 45px;
 }
 
 
@@ -335,6 +419,7 @@ a {
     min-height: 86px;
     padding: 0;
     border: none;
+    width: 568px;
 }
 
 .booking .popup-open:hover {
@@ -357,7 +442,7 @@ a {
     box-shadow: 0px 20px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-.form-group in
+
 /* стили формы на главной */
 
 .container .visually-hidden {
@@ -398,14 +483,14 @@ form.popup {
     font-size: 14px;
     line-height: 1.86;
     padding-left: 13px;
+    padding-right: 39px;
     border: none;
     min-width: 346px;
     min-height: 38px;
 }
 
-.form-group:nth-of-type(3),
-.form-group:nth-of-type(4) {
-    justify-content: flex-start;
+.form-group:nth-of-type(3) {
+    justify-content: flex-end;
 }
 
 .form-group:nth-of-type(3) label {
@@ -430,7 +515,6 @@ form.popup {
     font-size: 14px;
     line-height: 1.86;
     font-weight: bold;
-    text-align: left;
     background-color: #f2f2f2;
 }
 
@@ -499,6 +583,7 @@ form.popup {
 .map {
     display: flex;
     justify-content: center;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -120px;
@@ -510,7 +595,7 @@ form.popup {
 
 .footer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     width: 1200px;
     min-height: 120px;
@@ -530,7 +615,6 @@ form.popup {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 169px;
 }
 
 .contacts a,
@@ -550,6 +634,9 @@ form.popup {
 /* социальные сети */
 
 .footer .socials {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -625,9 +712,12 @@ form.popup {
 
 .sorting {
     display: flex;
-    width: 1056px;
-    margin-left: 72px;
-    margin-right: 73px;
+    /* width: 1056px; */
+    width: 1200px;
+    /* margin-left: 72px; */
+    /* margin-right: 73px; */
+    padding-left: 72px;
+    padding-right: 73px;
     background-color: #ffffff;
     min-height: 86px;
     align-items: center;
@@ -1148,3 +1238,6 @@ form.popup {
     background-image: url(../img/checkbox-on-2.svg);
     width: 27px;
 }
+
+
+/* space-around и два padding для footer */
