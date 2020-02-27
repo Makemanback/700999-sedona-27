@@ -94,9 +94,9 @@ a {
     background-image: url(../img/polygon.png), url(../img/background-photo.jpg);
     background-repeat: no-repeat;
     background-size: 1203px 59px, 1200px 800px;
-    background-position: center 452px, center -83px;
+    background-position: center 450px, center -83px;
     text-align: center;
-    height: 510px;
+    height: 508px;
 }
 
 .main-logo .container:last-child {
@@ -120,7 +120,8 @@ a {
     line-height: 1.24;
     text-align: center;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 26px;
+    margin-top: 6px;
     width: 440px;
 }
 
@@ -206,7 +207,7 @@ a {
 }
 
 .grid-wrapper-top span:first-of-type {
-    margin-bottom: 32px;
+    margin-bottom: 22px;
 }
 
 .grid-wrapper-top span:last-of-type {
@@ -217,18 +218,20 @@ a {
     width: 122px;
     font-size: 21px;
     line-height: 21px;
-    margin-bottom: 27px;
+    margin-bottom: 23px;
+    margin-top: -15px;
 }
 
 .grid-wrapper-bottom h3 {
     width: 150px;
     font-size: 21px;
     line-height: 21px;
-    margin-bottom: 29px;
+    margin-bottom: 22px;
+    margin-top: -18px;
 }
 
 .grid-wrapper-bottom span:first-of-type {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 }
 
 .grid-wrapper-bottom span:last-of-type {
@@ -283,20 +286,26 @@ a {
 }
 
 .grid-row:nth-child(3) h3 {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
 }
 
 .grid-row:nth-child(4) h3 {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
 
 .grid-row:nth-of-type(2) .icon-decorative {
     margin-bottom: 28px;
+    margin-top: -25px;
 }
 
-.grid-row:nth-of-type(3) .icon-decorative,
+.grid-row:nth-of-type(3) .icon-decorative {
+    margin-bottom: 29px;
+    margin-top: -23px;
+}
+
 .grid-row:nth-of-type(4) .icon-decorative {
-    margin-bottom: 32px;
+    margin-bottom: 27px;
+    margin-top: -28px;
 }
 
 .grid-row:nth-of-type(2) .icon-decorative::before {
@@ -344,23 +353,32 @@ a {
 }
 
 .grid-row:nth-child(6) h3 {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     width: 117px;
     text-align: center;
+    margin-top: -13px;
 }
 
 .grid-row:nth-child(7) h3 {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
+    margin-top: -16px;
 }
 
 .grid-row:nth-child(8) h3 {
-    margin-bottom: 28px;
+    margin-bottom: 21px;
+    margin-top: -17px;
 }
 
-.grid-row:nth-child(6) span:first-of-type,
-.grid-row:nth-child(7) span:first-of-type,
+.grid-row:nth-child(6) span:first-of-type {
+    margin-bottom: 19px;
+}
+
+.grid-row:nth-child(7) span:first-of-type {
+    margin-bottom: 19px;
+}
+
 .grid-row:nth-child(8) span:first-of-type {
-    margin-bottom: 27px;
+    margin-bottom: 22px;
 }
 
 .grid-row:nth-child(6) span:last-of-type {
@@ -377,6 +395,11 @@ a {
 
 
 /* стили заголовка и параграфа формы */
+
+.booking {
+    position: relative;
+    z-index: 9;
+}
 
 .booking>.container {
     display: flex;
@@ -404,7 +427,7 @@ a {
     color: #333333;
     text-align: center;
     margin: 0;
-    margin-bottom: 45px;
+    margin-bottom: 49px;
 }
 
 
@@ -417,7 +440,7 @@ a {
     font-weight: bold;
     line-height: 1.24;
     text-transform: uppercase;
-    font-style: "PT Sans";
+    font-style: "PT Sans", Arial, sans-serif;
     min-height: 86px;
     padding: 0;
     border: none;
@@ -445,6 +468,7 @@ a {
     box-shadow: 0px 20px 15px 0 rgba(0, 1, 1, 0.2);
     animation: movedown 0.6s;
     transition-timing-function: ease;
+    z-index: 1;
 }
 
 
@@ -577,27 +601,13 @@ a {
     text-align: center;
 }
 
-
-/* 
-.form-group:nth-of-type(3) button:first-of-type::before {
-    position: absolute;
-    top: 208px;
-    left: 180px;
-    width: 12px;
-    height: 3px;
-    content: "";
-    background-color: #a9a9a9;
+.form-group:nth-of-type(3) button:hover path {
+    fill: #000000;
 }
 
-.form-group:nth-of-type(3) button:nth-of-type(3)::before {
-    position: absolute;
-    top: 208px;
-    left: 413px;
-    width: 12px;
-    height: 3px;
-    content: "";
-    background-color: #a9a9a9;
-} */
+.form-group:nth-of-type(3) button:active path {
+    fill: #81b3d2;
+}
 
 .form-group:nth-of-type(3) button:nth-of-type(2) {
     margin-right: 53px;
@@ -642,7 +652,7 @@ a {
     color: #ffffff;
     min-height: 58px;
     text-transform: uppercase;
-    font-style: "PT Sans";
+    font-style: "PT Sans", Arial, sans-serif;
     font-size: 21px;
     line-height: 1.24;
     text-align: center;
@@ -914,7 +924,7 @@ a {
 
 .filter-range {
     width: 314px;
-    margin-top: 31px;
+    margin-top: 28px;
     color: #ffffff;
 }
 
@@ -1217,6 +1227,7 @@ a {
 
 .star span::before {
     content: url(../img/star.svg);
+    padding-left: 6px;
 }
 
 
@@ -1274,7 +1285,7 @@ a {
 }
 
 .container-checkbox legend {
-    margin-bottom: 31px;
+    margin-bottom: 27px;
 }
 
 

@@ -38,9 +38,9 @@ button.addEventListener("click", function(evt) {
 form.addEventListener("submit", function(evt) {
     if (!date_In.value || !date_Out.value || !number_Adults.value || !number_Children.value) {
         evt.preventDefault();
-        // popup.classList.remove("form-error");
-        // popup.offsetWidth = popup.offsetWidth;
-        // popup.classList.add("form-error");
+        popup.classList.remove("form-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("form-error");
     } else {
         if (isStorageSupport) {
             localStorage.setItem("numberAdults", number_Adults.value);
@@ -48,4 +48,11 @@ form.addEventListener("submit", function(evt) {
         }
     }
 });
-// выяснить как убрать класс form-error при закрытии формы
+
+// добавили обработчик событий для удаления класса анимации формы при её закрытии
+button.addEventListener("click", function() {
+    console.log(popup.classList.contains("vis-hid"));
+    if (popup.classList.contains("vis-hid")) {
+        popup.classList.remove("form-error");
+    }
+});
