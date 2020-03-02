@@ -404,11 +404,6 @@ a {
 
 /* стили заголовка и параграфа формы */
 
-.booking {
-    position: relative;
-    z-index: 9;
-}
-
 .booking>.container {
     display: flex;
     flex-wrap: wrap;
@@ -453,7 +448,8 @@ a {
     padding: 0;
     border: none;
     width: 568px;
-    z-index: 2;
+    text-align: center;
+    padding-top: 31px;
 }
 
 .booking .popup-open:hover {
@@ -467,8 +463,8 @@ a {
 
 .container-popup {
     display: block;
-    height: auto;
     position: absolute;
+    overflow: hidden;
     left: 50%;
     transform: translateX(-50%);
     width: 568px;
@@ -479,8 +475,16 @@ a {
     box-shadow: 0px 20px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-.not-visible {
+.booking .toggle-content {
     display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 350ms ease-in;
+}
+
+.booking .toggle-content.is-visible {
+    display: block;
+    height: auto;
 }
 
 
@@ -724,11 +728,11 @@ a {
     line-height: 1.24;
 }
 
-.contacts a {
+.contacts a:first-of-type {
     margin-bottom: 12px;
 }
 
-.contacts span {
+.contacts a:last-of-type {
     margin-top: -6px;
 }
 
