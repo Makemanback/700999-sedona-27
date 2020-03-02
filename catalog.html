@@ -26,69 +26,72 @@
         </header>
 
         <main>
-            <section>
-                <div class="panel-hotel-filter">
-                    <div class="hotel-filter">
-                        <fieldset class="container-checkbox">
-                            <legend>Инфраструктура:</legend>
-                            <div class="check-grid">
-                                <label class="check">
+            <section class="section-filter">
+                <div class="container">
+                    <div class="panel-hotel-filter">
+                        <div class="hotel-filter">
+                            <fieldset class="container-checkbox">
+                                <legend>Инфраструктура:</legend>
+                                <div class="check-grid">
+                                    <label class="check">
                                     <input class="check-input" type="checkbox" name="pool" checked>
                                     <span class="check-box"></span>
                                     Бассейн
                                 </label>
-                                <label class="check">
+                                    <label class="check">
                                     <input class="check-input" type="checkbox" name="parking">
                                     <span class="check-box"></span>
                                     Парковка
                                 </label>
-                                <label class="check">
+                                    <label class="check">
                                     <input class="check-input" type="checkbox" name="wifi">
                                     <span class="check-box"></span>
                                     Wi-Fi
                                 </label>
-                            </div>
-                        </fieldset>
-                        <fieldset class="container-checkbox">
-                            <legend>Тип жилья:</legend>
-                            <div class="check-grid">
-                                <label class="check">
+                                </div>
+                            </fieldset>
+                            <fieldset class="container-checkbox">
+                                <legend>Тип жилья:</legend>
+                                <div class="check-grid">
+                                    <label class="check">
                                     <input class="check-input" type="checkbox" name="hotel" checked>
                                     <span class="check-box"></span>
                                     Гостиница
                                 </label>
-                                <label class="check">
+                                    <label class="check">
                                     <input class="check-input" type="checkbox" name="motel" checked>
                                     <span class="check-box"></span>
                                     Мотель
                                 </label>
-                                <label class="check">
+                                    <label class="check">
                                     <input class="check-input" type="checkbox" name="apartments" checked>
                                     <span class="check-box"></span>
                                     Апартаменты
                                 </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <form class="filter-range">
+                            <div class="filter-range-title">
+                                Стоимость в сутки (р):
                             </div>
-                        </fieldset>
+                            <div class="price-controls">
+                                <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+                                <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+                            </div>
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                    <div class="range-toggle range-toggle-min"></div>
+                                    <div class="range-toggle range-toggle-max"></div>
+                                </div>
+                            </div>
+                            <button class="btn-transparent" type="submit">Показать</button>
+                        </form>
                     </div>
-                    <form class="filter-range">
-                        <div class="filter-range-title">
-                            Стоимость в сутки (р):
-                        </div>
-                        <div class="price-controls">
-                            <label class="min-price">от <input type="number" name="min-price" value="0"></label>
-                            <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
-                        </div>
-                        <div class="range-controls">
-                            <div class="scale">
-                                <div class="bar"></div>
-                                <div class="range-toggle range-toggle-min"></div>
-                                <div class="range-toggle range-toggle-max"></div>
-                            </div>
-                        </div>
-                        <button class="btn-transparent" type="submit">Показать</button>
-                    </form>
                 </div>
-
+            </section>
+            <section>
                 <div class="container">
                     <div class="sorting">
                         <div class="sorting-panel">
@@ -105,7 +108,6 @@
                         <div class="sorting-triangles">
                             <button><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg></button>
                             <button><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#81b3d2" d="M5.5 10L0 0h11"/></svg></button>
-
                         </div>
                     </div>
                 </div>

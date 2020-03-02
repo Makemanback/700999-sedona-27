@@ -20,11 +20,13 @@ try {
 } catch (err) {
     isStorageSupport = false;
 }
+// скрываем форму по умолчанию при работающем js
+popup.classList.add("not-visible");
 
 // добавляем обработчик событий клика на кнопку открытия формы, заводим переключатель классов для открытия/закрытия контейнера формы, ставим фокус на первое поле даты заезда
 button.addEventListener("click", function(evt) {
     evt.preventDefault();
-    popup.classList.toggle("vis-hid");
+    popup.classList.toggle("not-visible");
 
     if (storage) {
         number_Adults.value = storage;
@@ -51,8 +53,8 @@ form.addEventListener("submit", function(evt) {
 
 // добавили обработчик событий для удаления класса анимации формы при её закрытии
 button.addEventListener("click", function() {
-    console.log(popup.classList.contains("vis-hid"));
-    if (popup.classList.contains("vis-hid")) {
+    console.log(popup.classList.contains("not-visible"));
+    if (popup.classList.contains("not-visible")) {
         popup.classList.remove("form-error");
     }
 });
