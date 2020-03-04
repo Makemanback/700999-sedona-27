@@ -410,7 +410,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    min-height: 291px;
+    height: 291px;
     min-width: 1200px;
 }
 
@@ -450,6 +450,7 @@ a {
     width: 568px;
     text-align: center;
     padding-top: 31px;
+    z-index: 2;
 }
 
 .booking .popup-open:hover {
@@ -473,18 +474,20 @@ a {
     background-color: #ffffff;
     margin: 0 auto;
     box-shadow: 0px 20px 15px 0 rgba(0, 1, 1, 0.2);
+    animation: movedown 0.8s ease-in;
 }
 
-.booking .toggle-content {
+.not-visible {
     display: none;
-    height: 0;
-    overflow: hidden;
-    transition: height 350ms ease-in;
 }
 
-.booking .toggle-content.is-visible {
-    display: block;
-    height: auto;
+@keyframes movedown {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 

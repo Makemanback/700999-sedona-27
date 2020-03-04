@@ -21,7 +21,7 @@ try {
     isStorageSupport = false;
 }
 // прячем форму с помощью js
-popup.classList.add("toggle-content");
+popup.classList.add("not-visible");
 
 // добавляем обработчик событий клика на кнопку открытия формы, заводим переключатель классов для открытия/закрытия контейнера формы, ставим фокус на первое поле даты заезда
 button.addEventListener("click", function(evt) {
@@ -76,7 +76,8 @@ minusAdult.addEventListener("click", function(evt) {
 plusAdult.addEventListener("click", function(evt) {
     evt.preventDefault();
     if (adult.value < 99) {
-        adult.value = +adult.value + 1;
+        adult.value = Number(adult.value) + 1;
+
     }
 });
 
@@ -90,78 +91,6 @@ minusChildren.addEventListener("click", function(evt) {
 plusChildren.addEventListener("click", function(evt) {
     evt.preventDefault();
     if (children.value < 99) {
-        children.value = +children.value + 1;
+        children.value = Number(children.value) + 1;
     }
 });
-
-// Анимация отображения формы
-let show = function(elem) {
-
-    // Получаем высоту элемента
-    let getHeight = function() {
-        elem.style.display = 'block'; // Делаем видимым
-        let height = elem.scrollHeight + 'px'; // Получаем его высоту
-        elem.style.display = ''; //  Прячем опять
-        return height;
-    };
-
-    let height = getHeight(); // Получаем реальную высоту
-    elem.classList.add('is-visible'); // Добавляем класс, чтобы сделать видимым
-    elem.style.height = height; // Обновляем до максимальной высоты
-
-    // После завершения анимации, убираем инлайновую максимальную высоту, чтобы контент масштабировался адаптинвно
-    window.setTimeout(function() {
-        elem.style.height = '';
-    }, 350);
-
-};
-
-// Прячем элемент
-let hide = function(elem) {
-
-    // Даем элементу высоту для изменения
-    elem.style.height = elem.scrollHeight + 'px';
-
-    // Устанавливаем высоту опять на 0
-    window.setTimeout(function() {
-        elem.style.height = '0';
-    }, 1);
-
-    // После завершения анимации прячем
-    window.setTimeout(function() {
-        elem.classList.remove('is-visible');
-    }, 350);
-
-};
-
-// Переключаем отображение элемента
-let toggle = function(elem, timing) {
-
-    // Если элемент виден - прячем
-    if (elem.classList.contains('is-visible')) {
-        hide(elem);
-        return;
-    }
-
-    // В другом случае показываем
-    show(elem);
-
-};
-
-// Обработчик событый на клик
-document.addEventListener('click', function(event) {
-
-    // Убеждаемся, что кликнули именно на наш переключатель
-    if (!event.target.classList.contains('toggle')) return;
-
-    // Убираем поведение по умолчанию
-    event.preventDefault();
-
-    // Получаем содержимое
-    let content = document.querySelector(event.target.hash);
-    if (!content) return;
-
-    // Переключаем контент
-    toggle(content);
-
-}, false);
