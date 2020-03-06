@@ -66,31 +66,33 @@ let plusChildren = document.querySelector(".plus-button-children");
 let adult = document.querySelector(".adults-value");
 let children = document.querySelector(".children-value");
 
+// parseInt(adult.value, 10);
+// parseInt(children.value, 10);
+
 minusAdult.addEventListener("click", function(evt) {
     evt.preventDefault();
     if (adult.value > 1) {
-        adult.value -= 1;
+        --adult.value;
     }
 });
 
 plusAdult.addEventListener("click", function(evt) {
     evt.preventDefault();
     if (adult.value < 99) {
-        adult.value = Number(adult.value) + 1;
-
+        ++adult.value;
     }
 });
 
 minusChildren.addEventListener("click", function(evt) {
     evt.preventDefault();
     if (children.value > 0) {
-        children.value -= 1;
+        --children.value;
     }
 });
 
 plusChildren.addEventListener("click", function(evt) {
     evt.preventDefault();
     if (children.value < 99) {
-        children.value = Number(children.value) + 1;
+        ++children.value;
     }
 });
