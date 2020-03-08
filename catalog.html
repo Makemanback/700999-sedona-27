@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize-min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles-min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Sedona Catalog</title>
 </head>
 
@@ -30,7 +30,7 @@
             <section class="section-filter">
               <h2 class="visually-hidden">Фильтр для выбора отеля</h2>
                 <div class="container">
-                    <div class="panel-hotel-filter">
+                    <form class="panel-hotel-filter" action="https://echo.htmlacademy.ru" method="post">
                         <div class="hotel-filter">
                             <fieldset class="container-checkbox">
                                 <legend>Инфраструктура:</legend>
@@ -73,7 +73,7 @@
                                 </div>
                             </fieldset>
                         </div>
-                        <form class="filter-range">
+                        <div class="filter-range">
                             <div class="filter-range-title">
                                 Стоимость в сутки (р):
                             </div>
@@ -89,8 +89,8 @@
                                 </div>
                             </div>
                             <button class="btn-transparent" type="submit">Показать</button>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </section>
             <section>
@@ -115,7 +115,7 @@
                 </div>
             </section>
 
-            <div class="container">
+            <!-- <div class="container"> -->
                 <section class="hotels">
                     <div class="hotels-item">
                         <div class="hotels-item-description">
@@ -194,7 +194,7 @@
                         </div>
                     </div>
                 </section>
-            </div>
+            <!-- </div> -->
         </main>
 
         <footer class="footer">
