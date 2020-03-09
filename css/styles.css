@@ -1318,13 +1318,17 @@ a {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: 1px;
     min-height: 150px;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 72px;
+    padding-right: 73px;
+    border-top: 1px solid #e5e5e5;
 }
-
-.hotels-item::before {
+.hotels-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* .hotels-item::before {
     content: "";
     position: absolute;
     height: 1px;
@@ -1342,7 +1346,7 @@ a {
     left: -72px;
     right: -73px;
     bottom: 0;
-}
+} */
 
 .hotels-item-description {
     display: -webkit-box;
