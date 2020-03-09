@@ -857,6 +857,7 @@ a {
 /* стили футера */
 
 .footer {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -920,6 +921,7 @@ a {
 .footer .socials {
     position: absolute;
     left: 50%;
+    bottom: 36px;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
